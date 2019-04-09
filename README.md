@@ -20,6 +20,19 @@ Vue.use(VueBackgroundSize)
 <img src="" width="xxx" height="xx" v-background-size>
 <img src="" width="xxx" height="xx" v-background-size="type">
 ```
+属性の `width` と `height` は必須 
+
+```css
+.parent {
+  position: relative;
+  overflow: hidden;
+}
+
+.target {
+  position: absolute;
+}
+```
+親とターゲットとなる要素にstyleの追加が必須
 
 ## Documentation
 | Property | Type | Description | Default |
